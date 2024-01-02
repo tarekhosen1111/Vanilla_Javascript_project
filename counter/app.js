@@ -1,7 +1,7 @@
 // set inital value to zero
 let count = 0;
 // select value and buttons
-const value = document.querySelector("#value");
+const value = document.getElementById("value");
 const btns = document.querySelectorAll(".btn");
 
 btns.forEach(function (btn) {
@@ -22,7 +22,7 @@ btns.forEach(function (btn) {
       value.style.color = "red";
     }
     if (count === 0) {
-      value.style.color ="white";
+      value.style.color ="orange";
     }
     value.textContent = count;
   });
